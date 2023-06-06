@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stratford International School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial
+        }
+
+        .navbar {
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            /* If enabled it breaks dropdown menu */
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1e3957;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .mDrop {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .mDrop li:nth-of-type(-n + 1) {
+            float: down;
+        }
+
+        .mDrop {
+            position: relative;
+            top: 13.6rem;
+        }
+
+        li .mDrop {
+            visibility: hidden;
+            opacity: 0;
+            width: 8rem;
+            position: absolute;
+            top: 30px;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        li a:hover,
+        .mDrop:hover .li:hover {
+            background-color: #031427;
+        }
+
+        li:hover>ul,
+        li:focus-within>ul,
+        li ul:hover {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+
+        ul li ul li {
+            clear: both;
+            width: 100%;
+        }
+
+        .active {
+            background-color: #4caf50;
+
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url(images/cover.jpg);
+
+            /* Set a specific height */
+            min-height: 400px;
+            background-size: contain;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .float-container {
+            border: 3px solid #fff;
+            padding: 20px;
+            
+        }
+
+        .parent {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+            height: 50vh;
+        }
+
+        .child1 {
+            width: 50%;
+            margin-left: 10%;
+        }
+
+        .child2 {
+            width: 50%;
+            background-image: url(images/self.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 20%;
+        }
+
+        .child3 {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background: #275b91; height: 23vh;">
+        <center><a href="index.html"><img src="images/logo.png" style="height: 20vh;"></a></center>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a>
+                <ul class="mDrop">
+                    <li><a href="index.html#his">History</a></li>
+                    <li><a href="index.html#vis">Vision/Mission</a></li>
+                    <li><a href="index.html#hymn">Hymn</a></li>
+                </ul>
+            </li>
+            <li><a href="offer.html">Courses Offered</a>
+                <ul class="mDrop">
+                    <li><a href="offer.html">College of Education</a></li>
+                    <li><a href="offer.html#bus">College of Business</a></li>
+                    <li><a href="offer.html#acc">College of Accoutancy</a></li>
+                    <li><a href="offer.html#art">College of Arts and Sciences</a></li>
+                    <li><a href="offer.html#it">College of Information Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Stratford Website</a></li>
+            <li><a href="profile.html">Profile</a>
+                <ul class="mDrop">
+                    <li><a href="profile.html">Portfolio</a></li>
+                    <li><a href="#pics">Pictures</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#contacts">Contacts</a>
+                <ul class="mDrop">
+                    <li><a href="#contacts">Location Map</a></li>
+                    <li><a href="#contacts">Contact Number</a></li>
+                    <li><a href="#contacts">Email Address</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="parallax"></div><br>
+    <div class="parent">
+        <div class="child1">
+            <h1 style="margin-left: 5%;">Aliana Jane D. Bundoc
+            </h1>
+            <br><br>
+            <p style="margin-left: 5%; font-size: larger;">I am student in Stratford International School Bachelor of
+                Science in Information Technology. “If future generations are to remember us more with gratitude than
+                sorrow, we must achieve more than just the miracles of technology. We must also leave them a glimpse of
+                the world as it was created, not just as it looked when we got through with it.</p>
+
+        </div>
+        <div class="child2">
+        </div>
+    </div>
+    <div class="parent">
+        <div class="child1">
+            <h1>Biography
+            </h1>
+            <p style="margin-left: 5%; font-size: larger;"></p>Birthdate June 28,2002<br>Age - 20 years old<br>Gender -
+            Female<br>
+            <h3>Address</h3>Blk5 Lot21 Ferraren Subdivision Nursery Road Lagao General Santos City
+
+
+
+        </div>
+        <div class="child3">
+            <h1 style="margin-left: 5%;">Contacts
+            </h1>
+            Contact Number: 09672017597
+            Gmail: alianabundoc@gmail.com
+        </div>
+    </div>
+    <div class="parent">
+        <div class="child1">
+            <h1>Skills</h1>
+
+            <p style="margin-left: 5%; font-size: larger;"></p>Skills: Programming languages: Java, Python, and PHP
+        </div>
+        <div class="child3">
+            <h1>Educational Background</h1>
+
+            Elementary: Malapatan Central Elementary School<br>
+            Junior High School - Maranatha Christian Academy<br>
+            Senior High School: Stratford International School<br>
+            College - Stratford International School
+            <h3>Work Experience</h3>
+            None
+        </div>
+    </div>
+    <br id="pics"><br>
+    <table style="width: 100%; background: #031427;">
+        <Center><h1>PICTURES</h1></Center>
+        <tr>
+            <td style="width: 33.3; height: 40vh; border: 3px black solid;"><img src="images/pic1.jpg" style="width: 100%;"></td>
+            <td style="width: 33.3; height: 40vh; border: 3px black solid;"><img src="images/pic2.jpg" style="width: 100%;"></td>
+            <td style="width: 33.3; height: 40vh; border: 3px black solid;"><img src="images/pic3.jpg" style="width: 100%;"></td>
+        </tr>
+    </table>
+
+    <div id="his" style="background: #275b91; color: white; padding: 5%;">
+
+
+        <br>
+        <div class="parent">
+            <div class="child1">
+                <br><br><br><br><br>
+                <p style="margin-left: 5%; font-size: larger;">Contact us through email <b>Email Add:
+                        info@stratford.edu.ph</b> or call our number <b>Contact No. 09434849171</b> and telephone number
+                    <b>Tel No. 63-83-5541615</b> or <b>(083) 554 1615</b>
+                </p>
+            </div>
+            <div class="child3">
+                <br><br><br><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31737.006845389238!2d125.18408999999998!3d6.113754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f79f95c76509b5%3A0x26bbe323073a1f30!2sStratford%20International%20School!5e0!3m2!1sfil!2sph!4v1686035334378!5m2!1sfil!2sph"
+                    width="80%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer style="height: 10vh; background: #275b91; color: white; font-size: large;" id="contacts">
+            <br>
+            <center>&copy;Stratford International School | 2023 | All Rights Reserved</center>
+
+        </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stratford International School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial
+        }
+
+        .navbar {
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            /* If enabled it breaks dropdown menu */
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1e3957;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .mDrop {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .mDrop li:nth-of-type(-n + 1) {
+            float: down;
+        }
+
+        .mDrop {
+            position: relative;
+            top: 13.6rem;
+        }
+
+        li .mDrop {
+            visibility: hidden;
+            opacity: 0;
+            width: 8rem;
+            position: absolute;
+            top: 30px;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        li a:hover,
+        .mDrop:hover .li:hover {
+            background-color: #031427;
+        }
+
+        li:hover>ul,
+        li:focus-within>ul,
+        li ul:hover {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+
+        ul li ul li {
+            clear: both;
+            width: 100%;
+        }
+
+        .active {
+            background-color: #4caf50;
+
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url(images/stratford.jpg);
+
+            /* Set a specific height */
+            min-height: 400px;
+            background-size: contain;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .float-container {
+            border: 3px solid #fff;
+            padding: 20px;
+        }
+
+        .parent {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+            height: 50vh;
+        }
+
+        .child1 {
+            width: 50%;
+        }
+
+        .child2 {
+            width: 50%;
+            background-image: url(images/sch.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 10%;
+        }
+
+        .child3 {
+            width: 50%;
+        }
+        button{
+            height: 3rem;
+            background: #275b91;
+            color: white;
+            border: none;
+            transition: .50s;
+        }
+        button:hover{
+            background: #031427;
+            transition: .50s;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background: #275b91; height: 23vh;">
+        <center><a href="index.html"><img src="images/logo.png" style="height: 20vh;"></a></center>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#ab">About</a>
+                <ul class="mDrop">
+                    <li><a href="#his">History</a></li>
+                    <li><a href="#vis">Vision/Mission</a></li>
+                    <li><a href="#hymn">Hymn</a></li>
+                </ul>
+            </li>
+            <li><a href="#news">Courses Offered</a>
+                <ul class="mDrop">
+                    <li><a href="#top">College of Education</a></li>
+                    <li><a href="#bus">College of Business</a></li>
+                    <li><a href="#acc">College of Accoutancy</a></li>
+                    <li><a href="#art">College of Arts and Sciences</a></li>
+                    <li><a href="#it">College of Information Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Stratford Website</a></li>
+            <li><a href="profile.html">Profile</a>
+                <ul class="mDrop">
+                    <li><a href="profile.html">Portfolio</a></li>
+                    <li><a href="profile.html#pics">Pictures</a></li>
+
+                </ul>
+            </li>
+            <li><a href="profile.html#contacts">Contacts</a>
+                <ul class="mDrop">
+                    <li><a href="profile.html#contacts">Location Map</a></li>
+                    <li><a href="profile.html#contacts">Contact Number</a></li>
+                    <li><a href="profile.html#contacts">Email Address</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <table style="width: 100%; background: #031427;">
+            <Center><h1>REGISTRATIONS</h1></Center>
+            <tr>
+                <td style="width: 25%; height: 40vh;"><center><a href="UPDATED-LIST-OF-COLLEGE-STUDENTS-WITH-FINAL-PERMIT-SY-2022-2023-2ND-SEM-AS-OF-MAY-11-2023-TOTAL-330.xlsx" download><button>Registration 1</button></a></center></td>
+                <td style="width: 25%; height: 40vh;"><center><a href="UPDATED-LIST-OF-COLLEGE-STUDENTS-WITH-FINAL-PERMIT-SY-2022-2023-2ND-SEM-AS-OF-MAY-16-2023-TOTAL-391.xlsx" download><button>Registration 2</button></a></center></td>
+                <td style="width: 25%; height: 40vh;"><center><a href="UPDATED-LIST-OF-COLLEGE-STUDENTS-WITH-FINAL-PERMIT-SY-2022-2023-2ND-SEM-AS-OF-MAY-31-2023-TOTAL-933.xlsx" download><button>Registration 3</button></a></center></td>
+                <td style="width: 25%; height: 40vh;"><center><a href="UPDATED-LIST-OF-COLLEGE-STUDENTS-WITH-MIDTERM-PERMIT-SY-2022-2023-2ND-SEM-AS-OF-APRIL-22-2023-TOTAL-768.xlsx" download><button>Registration 4</button></a></center></td>
+            </tr>
+        </table><br>
+        <center><a href="details.html"><button>Checkout Enroll</button></a></center>
+    </div>
+
+</html>
