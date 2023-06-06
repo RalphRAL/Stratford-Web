@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        /* CSS styles for the checkout page */
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #4287f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .summary {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .summary span {
+            font-weight: bold;
+        }
+        button{
+            background: #4287f5;
+            height: 2rem;
+            color: white;
+            border: none;
+            width: 10rem;
+            transition: .50s;
+        }
+        button:hover{
+            background: white;
+            color: black;
+            transition: .50s;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div class="container">
+        <h1>Checkout Summary</h1>
+        <div class="summary">
+            <p><span>Full Name:</span> <span id="fullname"></span></p>
+            <p><span>Email:</span> <span id="email"></span></p>
+            <p><span>Address:</span> <span id="address"></span></p>
+            <p><span>City:</span> <span id="city"></span></p>
+            <p><span>State:</span> <span id="state"></span></p>
+            <p><span>Zip Code:</span> <span id="zipcode"></span></p>
+            <p><span>Name on Card:</span> <span id="cardname"></span></p>
+            <p><span>Credit Card Number:</span> <span id="cardnumber"></span></p>
+            <p><span>Expiration Month:</span> <span id="expmonth"></span></p>
+            <p><span>Expiration Year:</span> <span id="expyear"></span></p>
+            <p><span>CVV:</span> <span id="cvv"></span></p>
+        </div>
+        <a href="ty.html"><button>Confirm</button></a>
+        <button onclick="history.back()">Go Back</button>
+    </div>
+
+    <script>
+        // Retrieve the form data from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const formData = {
+            fullname: urlParams.get('fullname'),
+            email: urlParams.get('email'),
+            address: urlParams.get('address'),
+            city: urlParams.get('city'),
+            state: urlParams.get('state'),
+            zipcode: urlParams.get('zipcode'),
+            cardname: urlParams.get('cardname'),
+            cardnumber: urlParams.get('cardnumber'),
+            expmonth: urlParams.get('expmonth'),
+            expyear: urlParams.get('expyear'),
+            cvv: urlParams.get('cvv')
+        };
+
+        // Update the DOM with the form data
+        document.getElementById('fullname').textContent = formData.fullname;
+        document.getElementById('email').textContent = formData.email;
+        document.getElementById('address').textContent = formData.address;
+        document.getElementById('city').textContent = formData.city;
+        document.getElementById('state').textContent = formData.state;
+        document.getElementById('zipcode').textContent = formData.zipcode;
+        document.getElementById('cardname').textContent = formData.cardname;
+        document.getElementById('cardnumber').textContent = formData.cardnumber;
+        document.getElementById('expmonth').textContent = formData.expmonth;
+        document.getElementById('expyear').textContent = formData.expyear;
+        document.getElementById('cvv').textContent = formData.cvv;
+    </script>
+</body>
+
+</html>
